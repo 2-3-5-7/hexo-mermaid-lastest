@@ -1,0 +1,24 @@
+{
+  "name": "hexo-mermaid-lastest",
+  "version": "1.0.0",
+  "description": "Render the Mermaid code blocks in markdown files using the latest Mermaid library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2-3-5-7/hexo-mermaid-lastest.git"
+  },
+  "keywords": [
+    "hexo",
+    "mermaid",
+    "markdown"
+  ],
+  "author": "Jian-Feng Du",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/2-3-5-7/hexo-mermaid-lastest/issues"
+  },
+  "homepage": "https://github.com/2-3-5-7/hexo-mermaid-lastest#readme"
+}
