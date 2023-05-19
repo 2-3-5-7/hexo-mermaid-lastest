@@ -21,10 +21,7 @@ function render(data) {
 		if (matched) {
 			// https://mermaid.js.org/intro/n00b-gettingStarted.html#_3-calling-the-javascript-api
 			// always use latest one
-			data.content += `<script type="module">
-								import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
-								mermaid.initialize({ startOnLoad: true });
-							  </script>`;
+			data.content += `\n\n<script type="module"> import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';	mermaid.initialize({ startOnLoad: true }); </script>`;
 		}
 	}
 };
