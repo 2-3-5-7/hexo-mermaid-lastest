@@ -4,7 +4,7 @@
 
 - Install `npm i hexo-mermaid-lastest`
 
-- Use mermaid codeblocks in markdown files
+- Use mermaid code blocks in markdown files
 
 	````
 	```mermaid

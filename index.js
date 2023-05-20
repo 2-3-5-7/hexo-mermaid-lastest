@@ -15,13 +15,15 @@ function render(data) {
 			.replace(reg, function(raw, start, startQuote, lang, content, endQuote, end) {
 				matched = true;
 				return start + '<pre class="mermaid">' + content + '</pre>' + end;
-				// use this if you also need to display the source code
+				// use this if you also need to display the original code
 				// return start + '<pre class="mermaid">'+content+'</pre>' + end + raw;
 			});
 		if (matched) {
 			// https://mermaid.js.org/intro/n00b-gettingStarted.html#_3-calling-the-javascript-api
-			// always use latest one
-			data.content += `\n\n<script type="module"> import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';	mermaid.initialize({ startOnLoad: true }); </script>`;
+			// https://mermaid.js.org/config/setup/modules/mermaidAPI.html
+			// https://mermaid.js.org/syntax/flowchart.html#styling-line-curves
+			// always use the latest one
+			data.content += `\n\n<script type="module"> import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';	mermaid.initialize({startOnLoad: true, flowchart: {curve: 'linear'}}); </script>`;
 		}
 	}
 };
